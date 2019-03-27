@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <!-- Dependencies -->
+    <script src="d3.v5.min.js"></script>
+
+    <!-- Range slider code -->
+    <script src="d3RangeSlider.js"></script>
+
+    <!-- Range slider style -->
+    <link href="d3RangeSlider.css" rel="stylesheet">
+    <title></title>
+    
+
+
+    <style type="text/css">
+        #container{
+            height: 30px;
+        }
+        #range-label {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <div id="container" style="width: 50%;"></div>
+        <div id="range-label"></div>
+        <script type="text/javascript">
+            var slider = createD3RangeSlider(0, 100, "#container", true);
+            slider.onChange(function(newRange){
+                d3.select("#range-label").html(newRange.begin + " &mdash; " + newRange.end);
+            });
+            slider.range(0,10);
+        </script>
+    </div><!-- /.section -->
+</div><!-- /.container -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("div.play-container").addClass('hidden');
+    });
+</script>
+</body>
+</html>

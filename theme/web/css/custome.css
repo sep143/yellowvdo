@@ -1,0 +1,281 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 1, 2019, 3:44:28 PM
+    Author     : Ankit
+*/
+
+
+.error{
+    color:red;
+    //font-size: 12px;
+}
+
+.glyphicon-star:before{content:"\e006";}
+.glyphicon-star-empty:before{content:"\e007";}
+//rating start
+.rating-xs {
+    font-size: 2em;
+}
+.rating-container .clear-rating {
+    color: #aaa;
+    cursor: not-allowed;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 60%;
+    padding-right: 5px;
+}
+.clear-rating-active {
+    cursor: pointer!important;
+}
+.rating-container .rating-stars {
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.rating-container .empty-stars {
+    color: #aaa;
+}
+.rating-container .star {
+    display: inline-block;
+    margin: 0 3px;
+    text-align: center;
+}
+.rating-container .empty-stars {
+    color: #aaa;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+i {
+    font-size: 1.1em;
+}
+.rating-container .filled-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    color: #fde16d;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-text-stroke: 1px #777;
+    text-shadow: 1px 1px #999;
+}
+.rating-animate .filled-stars {
+    transition: width .25s ease;
+    -o-transition: width .25s ease;
+    -moz-transition: width .25s ease;
+    -webkit-transition: width .25s ease;
+}
+.rating-container .rating-input {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    font-size: 1px;
+    border: none;
+    background: 0 0;
+    padding: 0;
+    margin: 0;
+}
+.rating-loading {
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    color: #fff;
+    background: url(../img/loading.gif) top left no-repeat;
+    border: none;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+
+/* CSS for scroll bar start*/
+/*/ width /*/
+.categoryview::-webkit-scrollbar {
+width: 8px;
+}
+
+/*/ Track /*/
+.categoryview::-webkit-scrollbar-track {
+box-shadow: inset 0 0 3px grey; 
+border-radius: 10px;
+}
+
+/*/ Handle /*/
+.categoryview::-webkit-scrollbar-thumb {
+background: #fbd800; 
+/*background: #5121ad;*/
+
+border-radius: 10px;
+}
+
+/*/ Handle on hover /*/
+.categoryview::-webkit-scrollbar-thumb:hover {
+/*background: #4611A7; */
+background: #4D00E0;
+}
+
+/* CSS for scroll bar end*/
+
+/*
+home page and other page search box in change button color and text
+*/
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  padding: 10px;
+}
+.btn-primary1{
+    color: #000;
+    background-color: #fbd800;
+    border-color: transparent;
+    font-weight: 800;
+    /*margin-left: 5px;*/
+}
+.btn-size{
+   // color: #000;
+   // background-color: #fbd800;
+    border-color: transparent;
+    font-weight: 700;
+}
+.btn-primary2{
+    color: #fff;
+    background-color: #000;
+    border-color: transparent;
+    font-weight: 800;
+}
+.btn-primary2:hover{
+    color: #fff;
+    background-color: #000;
+    border-color: transparent;
+    font-weight: 800;
+}
+
+.user-login1 {
+    /* padding: 15px 0 0; */
+    color: #000;
+   // background-color: #fbd800;
+    border-color: transparent;
+   // font-weight: 800;
+    padding: 13px 0 0;
+}
+
+.hed a :hover {
+    color: #fff;
+    border-color: transparent;
+}
+
+.item-title h3 {
+    background: #fbd800 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #000;
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 2px 9px;
+}
+//top nav-bar will change in style file
+
+.copyright {
+    background: #fbd800 none repeat scroll 0 0;
+    /* padding: 40px 0 34px 0; */
+    
+}
+
+.copyright p, .copyright p a {
+    color: #000;
+}
+
+
+//after sign up then redirect login page then alert box open
+.alert-success1 {
+    background-color: #b9eabb;
+}
+
+//this button use by sort by
+.btn2 {
+    text-transform: uppercase;
+    border: none;
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.btn2 {
+    border-radius: 0px;
+}
+
+btn2 {
+    display: inline-block;
+    margin-bottom: 0;
+   // font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 16px;
+  //  font-size: 13px;
+    line-height: 1.846;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*.ads_box_item {
+    position: relative; 
+    bottom: -55px;
+}*/
+
+@media (max-width: 1100px) {
+	.ads_box_item {
+            position: relative; 
+            bottom: -10px;
+        }
+}
+@media (min-width: 992px) {
+	.ads_box_item {
+            position: static; 
+            bottom: 0px;
+        }
+}
+@media screen and (min-width: 768px) {
+	.ads_box_item {
+            position: relative; 
+            /*bottom: -55px;*/
+            bottom: -27px;
+        }
+}
+
+
+

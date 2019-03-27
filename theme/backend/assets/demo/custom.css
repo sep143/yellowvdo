@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 4, 2019, 12:53:05 PM
+    Author     : Ankit
+*/
+
+.btn1 {
+    position: relative;
+    padding: 7px 11px;
+    margin: .3125rem 1px;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.428571;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .2rem;
+    outline: 0;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1);
+    will-change: box-shadow,transform;
+    display: block;
+    border: none;
+}
+
+.btn1.btn-round {
+    border-radius: 20px;
+    border: none;
+}
+
+.btn1:not(:disabled):not(.disabled), .navbar-toggler:not(:disabled):not(.disabled), .page-link:not(:disabled):not(.disabled), summary {
+    cursor: pointer;
+   outline: none;
+}
+
+.btn1:focus, .btn1:hover, a {
+    text-decoration: none;
+    border: none;
+}
+
+.bt1:active {
+    outline: none;
+    border: none;
+}
+

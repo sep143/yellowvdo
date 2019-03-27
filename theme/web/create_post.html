@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<!-- Mirrored from askbootstrap.com/preview/obootstrap-classified/create_post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Nov 2018 05:50:56 GMT -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Yellow VDO</title>
+      
+	  <!-- Favicon Icon -->
+      <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon.ico">
+      <link rel="icon" type="image/png" href="./images/favicon.ico">
+      
+	  <!-- Bootstrap CSS -->
+      <link href="./css/bootstrap.min.css" rel="stylesheet">
+      
+	  <!-- Custom CSS -->
+      <link href="./css/style.css" rel="stylesheet">
+      
+	  <!-- Owl Carousel -->
+      <link rel="stylesheet" href="./plugins/owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="./plugins/owl-carousel/owl.theme.css">
+      
+	  <!-- Font Awesome -->
+      <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!--for google map link api use-->
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+
+      <style>
+          
+input[type="file"] {
+  display: block;
+}
+.imageThumb {
+  max-height: 150px;
+  border: 1px solid;
+  padding: 1px;
+  cursor: pointer;
+}
+.pip {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.remove {
+  display: block;
+  //width: 50%;
+ // background: #444;
+  //border: 1px solid darkred;
+  color: darkred;
+  text-align: center;
+  cursor: pointer;
+}
+.remove:hover {
+  background: white;
+  color: black;
+}
+.edit {
+  display: block;
+  //width: 50%;
+  //background: #444;
+  //border: 1px solid darkgreen;
+  color: darkgreen;
+  text-align: center;
+  cursor: pointer;
+}
+.edit:hover {
+  background: white;
+  color: black;
+}
+      </style>
+   </head>
+   <body>
+	  
+	  <!-- Preloder -->
+	  <div id="preloader"></div>	
+      <!-- End Preloder -->
+	  
+	  <!-- Navbar -->
+      <nav class="navbar top-navbar" role="navigation">
+         <div class="container">
+            <div class="navbar-header col-sm-2">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="./index.html"><img alt="logo" src="./images/logo.png" ></a>
+               <!--<a class="navbar-brand" href="./index.html">Yellow VDO</a>-->
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+<!--                  <li class="dropdown">
+                     <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> Categories Pages <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="categories.html"><i class="fa fa-fw fa-angle-right"></i> Categories</a>
+                        </li>
+                        <li>
+                           <a href="category-grid.html"><i class="fa fa-fw fa-angle-right"></i> Category Grid</a>
+                        </li>
+                        <li>
+                           <a href="single.html"><i class="fa fa-fw fa-angle-right"></i> Single Item</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li><a href="pricing.html">Pricing</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li class="dropdown">
+                     <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Blog <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="blog.html"><i class="fa fa-fw fa-angle-right"></i> Blog</a>
+                        </li>
+                        <li>
+                           <a href="blog_details.html"><i class="fa fa-fw fa-angle-right"></i> Blog Details</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> Other Pages <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="create_post.html"><i class="fa fa-fw fa-angle-right"></i> Post Your Ad</a>
+                        </li>
+                        <li>
+                           <a href="settings.html"><i class="fa fa-fw fa-angle-right"></i> Settings</a>
+                        </li>
+                        <li>
+                           <a href="close-account.html"><i class="fa fa-fw fa-angle-right"></i> Close account</a>
+                        </li>
+                        <li>
+                           <a href="my-ads.html"><i class="fa fa-fw fa-angle-right"></i> My Ads</a>
+                        </li>
+                        <li>
+                           <a href="favourite.html"><i class="fa fa-fw fa-angle-right"></i> Favourite Ads</a>
+                        </li>
+                        <li>
+                           <a href="privacy.html"><i class="fa fa-fw fa-angle-right"></i> Privacy Policy</a>
+                        </li>
+                        <li>
+                           <a href="404.html"><i class="fa fa-fw fa-angle-right"></i> 404</a>
+                        </li>
+                     </ul>
+                  </li>-->
+               </ul>
+                <div class="user-login pull-right">
+                  <a class="btn btn-md btn-primary" href="create_post.html">Create Ad</a>&nbsp;&nbsp;&nbsp;
+                  <a class="" href="login.html">Login</a>
+                  <span>/</span>  
+                  <a href="signup.html">Sign Up</a>
+               </div>
+               <div class="user-dropdown pull-right">
+                   
+<!--                  <ul class="nav navbar-right top-nav">
+                     <li class="dropdown">
+                        <a aria-expanded="true" href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="./images/user.jpg" alt="User Image" class="user-dp"> Jhone Doe <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a href="settings.html"><i class="fa fa-fw fa-user"></i> Profile</a>
+                           </li>
+                           <li>
+                              <a href="my-ads.html"><i class="fa fa-fw fa-pencil"></i> My Ads</a>
+                           </li>
+                           <li>
+                              <a href="favourite.html"><i class="fa fa-fw fa-heart"></i> Favourite Ads</a>
+                           </li>
+                           <li>
+                              <a href="./ad-alerts.html"><i class="fa fa-fw fa-clock-o"></i> Ad Alerts</a>
+                           </li>
+                           <li>
+                              <a href="settings.html"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                           </li>
+                           <li>
+                              <a href="login.html"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>-->
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- End Navbar -->
+      
+	  <!-- Breadcumb -->
+      <section class="breadcumb_area">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12 text-center">
+                  <div class="breadcumb_section">
+                     <div class="page_title">
+                        <h3>Post Your Ad</h3>
+                     </div>
+                     <div class="page_pagination">
+                        <ul>
+                           <li><a href="./index.html">Home</a></li>
+                           <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                           <li>Post Your Ad</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Breadcumb -->
+      
+	  <!-- Create Post -->
+      <section class="create-post">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-10 col-sm-offset-1">
+                  <div class="login-panel widget margin-bottom-none">
+                     <div class="login-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Category <span class="required">*</span></label>
+                                        <select class="form-control border-form">
+                                            <option selected="">All Category</option>
+                                            <option>Hand Phone</option>
+                                            <option>Motorcycle</option>
+                                            <option>Properti</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Sub Category <span class="required">*</span></label>
+                                        <select class="form-control border-form">
+                                            <option selected="">Sub Category</option>
+                                            <option>Hand Phone</option>
+                                            <option>Motorcycle</option>
+                                            <option>Properti</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           
+                           <div class="form-group">
+                              <label class="control-label">Caption Line <span class="required">*</span></label>
+                              <input type="text" placeholder="e.g. Apple iPhone SE 2017" required="required" value="" class="form-control border-form">
+                           </div>
+                           <div class="form-group">
+                              <label class="control-label">Key Word <span class="required">*</span></label>
+                              <input type="text" placeholder="e.g. Apple iPhone SE 2017" required="required" value="" class="form-control border-form">
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-11 col-xs-8">
+                                    <label class="control-label">Email <span class="required">*</span></label>
+                                   <input type="text" placeholder="e.g. example@domain.com" required="required" value="" class="form-control border-form">
+                                  </div>
+                                 <div class="col-sm-1 col-xs-4">
+                                    <div class="checkboxes" style="margin-top: 40px;">
+                                        <input type="checkbox" value="1" id="c1" checked="checked" />
+                                        <label class="check" for="c1" title="Show Tic"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-11 col-xs-9">
+                                    <label class="control-label">WhatsApp No. <span class="required">*</span></label>
+                                   <input type="text" placeholder="e.g. example@domain.com" required="required" value="" class="form-control border-form">
+                                  </div>
+                                 <div class="col-sm-1 col-xs-3">
+                                    <div class="checkboxes" style="margin-top: 40px;">
+                                        <input type="checkbox" value="1" id="c2" checked="" />
+                                        <label class="check" for="c2" title="Show Tic"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-11 col-xs-9">
+                                    <label class="control-label">Phone No. <span class="required">*</span></label>
+                                   <input type="text" placeholder="e.g. example@domain.com" required="required" value="" class="form-control border-form">
+                                  </div>
+                                 <div class="col-sm-1 col-xs-3">
+                                    <div class="checkboxes" style="margin-top: 40px;">
+                                        <input type="checkbox" value="1" id="c3" checked="checked" />
+                                        <label class="check" for="c3" title="Show Tic"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-11 col-xs-9">
+                                    <label class="control-label">Land Line No. <span class="required">*</span></label>
+                                   <input type="text" placeholder="e.g. example@domain.com" required="required" value="" class="form-control border-form">
+                                  </div>
+                                 <div class="col-sm-1 col-xs-3">
+                                    <div class="checkboxes" style="margin-top: 40px;">
+                                        <input type="checkbox" value="1" id="c4" checked="checked" />
+                                        <label class="check" for="c4" title="Show Tic"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-12 col-xs-12">
+                                    <label class="control-label">URL 1 <span class="required"></span></label>
+                                   <input type="text" placeholder="e.g. www.example.com" value="" class="form-control border-form">
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-12 col-xs-12">
+                                    <label class="control-label">URL 2 <span class="required"></span></label>
+                                   <input type="text" placeholder="e.g. www.example.com" value="" class="form-control border-form">
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-12 col-xs-12">
+                                    <label class="control-label">URL 3 <span class="required"></span></label>
+                                   <input type="text" placeholder="e.g. www.example.com" value="" class="form-control border-form">
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-12 col-xs-12">
+                                    <label class="control-label">URL 4 <span class="required"></span></label>
+                                   <input type="text" placeholder="e.g. www.example.com" value="" class="form-control border-form">
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-12 col-xs-12">
+                                    <label class="control-label">URL 5 <span class="required"></span></label>
+                                   <input type="text" placeholder="e.g. www.example.com" value="" class="form-control border-form">
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-12 col-xs-12">
+                                    <label class="control-label">Description <span class="required">*</span></label>
+                                    <textarea rows="5" class="form-control border-form" required=""></textarea>
+                                   
+                                  </div>
+                              </div>
+                           </div>
+                            <div class="row">
+                                <div class="col-md-7 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-12 col-xs-12">
+                                                <label class="control-label">Address :  <span class="required">*</span></label>
+                                                <textarea rows="2" class="form-control border-form" required=""></textarea>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-12 col-xs-12">
+                                                <label class="control-label">Country <span class="required">*</span></label>
+                                                <select class="form-control border-form">
+                                                    <option selected="">Country</option>
+                                                    <option>Hand Phone</option>
+                                                    <option>Motorcycle</option>
+                                                    <option>Properti</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-xs-12">
+                                                <label class="control-label">State <span class="required">*</span></label>
+                                                <select class="form-control border-form">
+                                                    <option selected="">State</option>
+                                                    <option>Hand Phone</option>
+                                                    <option>Motorcycle</option>
+                                                    <option>Properti</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-xs-12">
+                                                <label class="control-label">City <span class="required">*</span></label>
+                                                <select class="form-control border-form">
+                                                    <option selected="">City</option>
+                                                    <option>Hand Phone</option>
+                                                    <option>Motorcycle</option>
+                                                    <option>Properti</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xs-12">
+                                    <!--For google map div start-->
+                                    <input id="searchInput" class="input-controls" type="text" placeholder="Enter a location">
+                                    <div class="map" id="map" style="width: 100%; height: 300px;"></div>
+<!--                                    <div class="form_area">
+                                        <input type="text" name="location" id="location">
+                                        <input type="text" name="lat" id="lat">
+                                        <input type="text" name="lng" id="lng">
+                                    </div>-->
+
+                                    <!--For google map div end-->
+                                </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                &nbsp;<br>
+                                <div class="row container-fluid">
+                                    <b class="">Upload Images</b>
+                                    <div class="col-md-12" style="height: 350px; border: 1px solid lightgray; overflow-y: scroll; overflow-x: hidden;">
+                                        <!--Image upload div start-->
+                                        <div class="field" align="left" id="files_img">
+                           
+                                        </div>
+                                        <!--Image upload div end-->
+                                    </div>
+                                </div>
+                                 &nbsp;<br>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        &nbsp;
+                                    </div>
+                                        <div class="col-md-4">
+                                            <input type="file" id="files" name="files[]" multiple />
+                                        </div>
+                                    <div class="col-md-4">
+                                        &nbsp;
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="">
+                                            <span class="fileinput-new">Add Video</span>
+                                            <input type="file" name="file[]" class="file_multi_video" accept="video/*" />
+                                        </span>
+                                       <video style="width: 100%; height: auto;" controls>
+                                            <source src="mov_bbb.mp4" id="video_here">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           <div class="form-group text-right margin-bottom-none">
+                              <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Create ad</button>
+                              <button type="submit" class="btn btn-danger"><i class="fa fa-close"></i> Cancel</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Create Post -->
+      
+	  <!-- Footer -->
+      <footer>
+<!--         <section class="footer-Content">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <div class="footer-widget">
+                        <h3 class="block-title">About</h3>
+                        <div class="textwidget">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis. Etiam euismod ornare elementum. Sed ex est,  Sed ex est, consectetur eget consectetur, Lorem ipsum dolor sit amet...</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <div class="footer-widget">
+                        <h3 class="block-title">Categories</h3>
+                        <ul class="menu">
+                           <li><a href="#"><span>562</span> Restaurant</a></li>
+                           <li><a href="#"><span>451</span> Real Estate</a></li>
+                           <li><a href="#"><span>352</span> Cars</a></li>
+                           <li><a href="#"><span>312</span> Shopping</a></li>
+                           <li><a href="#"><span>262</span> Job</a></li>
+                           <li><a href="#"><span>152</span> Hotels</a></li>
+                           <li><a href="#"><span>102</span> Services</a></li>
+                           <li><a href="#"><span>100</span> Pets</a></li>
+                           <li><a href="#"><span>95</span> Cars</a></li>
+                           <li><a href="#"><span>85</span> Shopping</a></li>
+                           <li><a href="#"><span>50</span> Job</a></li>
+                           <li><a href="#"><span>25</span> Hotels</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <div class="footer-widget">
+                        <h3 class="block-title">Latest Post</h3>
+                        <ul class="blog-footer">
+                           <li>
+                              <a href="#">Lorem ipsum dolor sit amet, quem...</a>
+                              <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 12, 2017</span>
+                           </li>
+                           <li>
+                              <a href="#">Full Width Media Post Lorem ipsum..</a>
+                              <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> September 25, 2017</span>
+                           </li>
+                           <li>
+                              <a href="#">Perfect Video Post Lorem ipsum..</a>
+                              <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> November 19, 2017</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <div class="footer-widget">
+                        <h3 class="block-title">Quick Links</h3>
+                        <ul class="menu">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">FAQ</a></li>
+                           <li><a href="#">Careers</a></li>
+                           <li><a href="#">Pricing Plans</a></li>
+                           <li><a href="#">Categories</a></li>
+                           <li><a href="#">Services</a></li>
+                           <li><a href="#">Team</a></li>
+                           <li><a href="#">Contact</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Help</a></li>
+                           <li><a href="#">Advertise With Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>-->
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="bottom-social-icons social-icon text-center">  
+                        <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+                        <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" target="_blank" class="dribble"><i class="fa fa-dribbble"></i></a>
+                        <a href="#" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+                        <a href="#" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                     </div>
+                     <div class="site-info text-center">
+                        <p>&copy; Copyright 2018 Yellow VDO . All Rights Reserved
+                            <!--<br> Made with <i class="fa fa-heart"></i> by <a target="_blank" href="#"><strong>Osahan Studio</strong></a>-->
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer -->
+      
+	  <!-- Post Ad -->
+      <!--<a href="create_post.html" data-toggle="tooltip" data-placement="left" title="Post Your Ad" class="btn btn-primary btn-lg post-free-add-btn"><i class="fa fa-pencil"></i></a>-->
+	  <!-- End Post Ad -->
+	  
+	  <!-- Back To Top -->
+	  <a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+      <!-- End Back To Top -->
+	  
+	  <!-- Chat Popup -->
+<!--	  <div id="accordion">
+			<div class="popup-box chat-popup">
+			  <div class="popup-head">
+				 <div class="popup-head-left pull-left">
+					<a data-toggle="collapse" data-parent="#accordion" href="#popup">
+					<img src="./images/user.jpg" alt=""> John Doe
+					<small>Online</small>
+					</a>
+				 </div>
+				 <div class="popup-head-right pull-right">
+					<div class="btn-group">
+					   <button class="chat-header-button" data-toggle="dropdown" type="button" aria-expanded="false">
+					   <i class="glyphicon glyphicon-cog"></i> </button>
+					   <ul role="menu" class="dropdown-menu pull-right">
+						  <li><a href="#">Media</a></li>
+						  <li><a href="#">Block</a></li>
+						  <li><a href="#">Clear Chat</a></li>
+						  <li><a href="#">Email Chat</a></li>
+					   </ul>
+					</div>
+					<button data-toggle="collapse" data-parent="#accordion" href="#popup" class="chat-header-button pull-right" type="button"><i class="glyphicon glyphicon-off"></i></button>
+				 </div>
+			  </div>
+			  <div id="popup" class="collapse">
+				 <div class="popup-messages">
+					<div class="direct-chat-messages">
+					   <div class="chat-box-single-line">
+						  <abbr class="timestamp">October 8th, 2015</abbr>
+					   </div>
+					    Message. Default to the left 
+					   <div class="direct-chat-msg doted-border">
+						  <div class="direct-chat-info clearfix">
+							 <span class="direct-chat-name pull-left">Osahan</span>
+						  </div>
+						   /.direct-chat-info 
+						  <img alt="message user image" src="./images/user.jpg" class="direct-chat-img"> /.direct-chat-img 
+						  <div class="direct-chat-text">
+							 Hey bro, how’s everything going ?
+						  </div>
+						  <div class="direct-chat-info clearfix">
+							 <span class="direct-chat-timestamp pull-right">3.36 PM</span>
+						  </div>
+						  <div class="direct-chat-info clearfix">
+							 <span class="direct-chat-img-reply-small pull-left">
+							 </span>
+							 <span class="direct-chat-reply-name">Singh</span>
+						  </div>
+						   /.direct-chat-text 
+					   </div>
+					    /.direct-chat-msg 
+					   <div class="chat-box-single-line">
+						  <abbr class="timestamp">October 9th, 2015</abbr>
+					   </div>
+					    Message. Default to the left 
+					   <div class="direct-chat-msg doted-border">
+						  <div class="direct-chat-info clearfix">
+							 <span class="direct-chat-name pull-left">Osahan</span>
+						  </div>
+						   /.direct-chat-info 
+						  <img alt="" src="./images/user.jpg" class="direct-chat-img"> /.direct-chat-img 
+						  <div class="direct-chat-text">
+							 Hey bro, how’s everything going ?
+						  </div>
+						  <div class="direct-chat-info clearfix">
+							 <span class="direct-chat-timestamp pull-right">3.36 PM</span>
+						  </div>
+						  <div class="direct-chat-info clearfix">
+							 <img alt="" src="./images/blog/user/a3.jpg" class="direct-chat-img big-round">
+							 <span class="direct-chat-reply-name">Singh</span>
+						  </div>
+						   /.direct-chat-text 
+					   </div>
+					    /.direct-chat-msg 
+					</div>
+				 </div>
+				 <div class="popup-messages-footer">
+					<textarea id="status_message" placeholder="Type a message..." rows="10" cols="40" name="message"></textarea>
+					<div class="btn-footer">
+					   <button class="bg_none"><i class="glyphicon glyphicon-film"></i> </button>
+					   <button class="bg_none"><i class="glyphicon glyphicon-camera"></i> </button>
+					   <button class="bg_none"><i class="glyphicon glyphicon-paperclip"></i> </button>
+					   <button class="bg_none pull-right"><i class="glyphicon glyphicon-thumbs-up"></i> </button>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>-->
+	  <!-- End Chat Popup -->
+      
+	  <!-- jQuery -->
+      <script src="./js/jquery.js"></script>
+      
+	  <!-- Custom js -->
+      <script src="./js/custom.js"></script>
+      
+	  <!-- Bootstrap JavaScript -->
+      <script src="./js/bootstrap.min.js"></script>
+      
+	  <!-- Owl Carousel -->
+      <script src="./plugins/owl-carousel/owl.carousel.js"></script>
+     
+	  <!-- Filestyle -->
+      <!--<script src="./plugins/bootstrap-filestyle/bootstrap-filestyle.js"></script>-->
+      
+      <!--video upload and view-->
+<script>
+$(document).on("change", ".file_multi_video", function(evt) {
+    var $source = $('#video_here');
+    $source[0].src = URL.createObjectURL(this.files[0]);
+    $source.parent()[0].load();
+  });
+</script>
+<script>
+$(document).ready(function() {
+  if (window.File && window.FileList && window.FileReader) {
+    $("#files").on("change", function(e) {
+      var files = e.target.files,
+        filesLength = files.length;
+      for (var i = 0; i < filesLength; i++) {
+        var f = files[i]
+        var fileReader = new FileReader();
+        fileReader.onload = (function(e) {
+          var file = e.target;
+          $("<span class=\"pip\">" +
+            "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+            "<br/><div class='row'>\n\
+                <div class='col-md-6'><span class=\"edit\"><i class='fa fa-edit'></i> Edit</span></div>\n\
+                <div class='col-md-6'><span class=\"remove\"><i class='fa fa-trash'></i> Delete</span></div>\n\
+                </div>" +
+            "</span>").insertAfter("#files_img");
+    
+          $(".remove").click(function(){
+            $(this).parent().parent().parent(".pip").remove();
+          });
+          
+          // Old code here
+          /*$("<img></img>", {
+            class: "imageThumb",
+            src: e.target.result,
+            title: file.name + " | Click to remove"
+          }).insertAfter("#files").click(function(){$(this).remove();});*/
+          
+        });
+        fileReader.readAsDataURL(f);
+      }
+    });
+  } else {
+    alert("Your browser doesn't support to File API")
+  }
+});
+</script>
+
+<!--for google map script-->
+<script>
+/* script */
+function initialize() {
+   var latlng = new google.maps.LatLng(28.5355161,77.39102649999995);
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: latlng,
+      zoom: 13
+    });
+    var marker = new google.maps.Marker({
+      map: map,
+      position: latlng,
+      draggable: true,
+      anchorPoint: new google.maps.Point(0, -29)
+   });
+    var input = document.getElementById('searchInput');
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    var geocoder = new google.maps.Geocoder();
+    var autocomplete = new google.maps.places.Autocomplete(input);
+    autocomplete.bindTo('bounds', map);
+    var infowindow = new google.maps.InfoWindow();   
+    autocomplete.addListener('place_changed', function() {
+        infowindow.close();
+        marker.setVisible(false);
+        var place = autocomplete.getPlace();
+        if (!place.geometry) {
+            window.alert("Autocomplete's returned place contains no geometry");
+            return;
+        }
+  
+        // If the place has a geometry, then present it on a map.
+        if (place.geometry.viewport) {
+            map.fitBounds(place.geometry.viewport);
+        } else {
+            map.setCenter(place.geometry.location);
+            map.setZoom(17);
+        }
+       
+        marker.setPosition(place.geometry.location);
+        marker.setVisible(true);          
+    
+        bindDataToForm(place.formatted_address,place.geometry.location.lat(),place.geometry.location.lng());
+        infowindow.setContent(place.formatted_address);
+        infowindow.open(map, marker);
+       
+    });
+    // this function will work on marker move event into map 
+    google.maps.event.addListener(marker, 'dragend', function() {
+        geocoder.geocode({'latLng': marker.getPosition()}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          if (results[0]) {        
+              bindDataToForm(results[0].formatted_address,marker.getPosition().lat(),marker.getPosition().lng());
+              infowindow.setContent(results[0].formatted_address);
+              infowindow.open(map, marker);
+          }
+        }
+        });
+    });
+}
+function bindDataToForm(address,lat,lng){
+   document.getElementById('location').value = address;
+   document.getElementById('lat').value = lat;
+   document.getElementById('lng').value = lng;
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+   </body>
+
+<!-- Mirrored from askbootstrap.com/preview/obootstrap-classified/create_post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Nov 2018 05:50:56 GMT -->
+</html>
